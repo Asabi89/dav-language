@@ -1,0 +1,14 @@
+# Factorial program in English DAV
+I have a number called n.
+Set n to 5.
+
+Create a function named factorial that takes one number num.
+    If num is less than or equal to 1:
+        I will return 1.
+    Otherwise:
+        I will return num times factorial(num minus 1).
+
+Show "Calculating factorial of" on the screen.
+Show n on the screen.
+Show "Result:" on the screen.
+Show the result of factorial(n) on the screen.

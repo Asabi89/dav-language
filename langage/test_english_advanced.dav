@@ -1,0 +1,57 @@
+# Test English version with new features
+I have a number called x.
+Set x to 5.
+
+# Test simple display
+Show x on the screen.
+
+# Test function with multiple parameters
+Create a function named multiply that takes two numbers a and b.
+    I will return a times b.
+
+# Test function result display
+Show the result of multiply(3, 7) on the screen.
+
+# Test condition
+If x is greater than 3:
+    Show "x is big" on the screen.
+Otherwise:
+    Show "x is small" on the screen.
+
+# Test while loop
+I have a number called i.
+Set i to 1.
+While i is less than or equal to 3:
+    Show i on the screen.
+    Increase i by 1.
+
+# Test for loop - range
+Show "For loop with range:" on the screen.
+For j in range 1 to 5:
+    Show j on the screen.
+
+# Test for loop - times
+Show "For loop with times:" on the screen.
+For 3 times:
+    Show "Hello!" on the screen.
+
+# Test for loop - list iteration
+I have a list called numbers.
+Add 10 to numbers.
+Add 20 to numbers.
+Add 30 to numbers.
+
+Show "For loop with list:" on the screen.
+For each item in numbers:
+    Show item on the screen.
+
+# Test do-while loop
+I have a number called count.
+Set count to 0.
+Show "Do-while loop:" on the screen.
+Do:
+    Show count on the screen.
+    Increase count by 1.
+While count is less than 3.
+
+Show "All tests completed!" on the screen.

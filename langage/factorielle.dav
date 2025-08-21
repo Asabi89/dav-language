@@ -1,0 +1,10 @@
+J'ai un nombre appelé n.
+Demander à l'utilisateur une valeur pour n.
+
+Créer une fonction nommée factorielle qui prend un nombre.
+    Si nombre est inférieur ou égal à 1:
+        Je vais retourner 1.
+    Sinon:
+        Je vais retourner nombre fois factorielle(nombre moins 1).
+
+Montrer le résultat de factorielle(n) à l'écran.
