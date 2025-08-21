@@ -46,12 +46,12 @@ dav --interactive
 ```dav
 J'ai un nombre appelé x.
 Définir x à 5.
-Montrer x à l'écran.
+Affiche x.
 
 Créer une fonction nommée doubler qui prend un nombre.
     Je vais retourner nombre fois 2.
 
-Montrer le résultat de doubler(x) à l'écran.
+Affiche le résultat de doubler(x).
 ```
 
 **English version** (`hello.dav`):
@@ -76,33 +76,7 @@ Show the result of double(x) on the screen.
 | `Si x est supérieur à 3` | `If x is greater than 3` | Conditions |
 | `Tant que x est inférieur à 10` | `While x is less than 10` | Loops |
 
-## Project Structure
 
-```
-dav-language/
-├── bin/
-│   ├── dav              # French interpreter executable
-│   └── dav-en           # English interpreter executable  
-├── src/
-│   ├── core/
-│   │   ├── parser.py    # Common parsing logic
-│   │   ├── evaluator.py # Expression evaluation
-│   │   └── executor.py  # Code execution
-│   ├── french/
-│   │   └── interpreter.py
-│   ├── english/
-│   │   └── interpreter.py
-│   └── common/
-│       ├── types.py
-│       └── utils.py
-├── examples/
-│   ├── french/
-│   └── english/
-├── docs/
-├── tests/
-└── assets/
-    └── logo.ico
-```
 
 ## Contributing
 
