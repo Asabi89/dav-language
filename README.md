@@ -1,91 +1,163 @@
-# DAV Programming Language
+# 🚀 DAV - Premier Langage de Programmation Bilingue
 
-**DAV** is a human-friendly programming language that allows you to write code in natural French or English.
+[![Release](https://img.shields.io/github/v/release/Asabi89/dav-language)](https://github.com/Asabi89/dav-language/releases)
+[![Downloads](https://img.shields.io/github/downloads/Asabi89/dav-language/total)](https://github.com/Asabi89/dav-language/releases)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-## Features
+**DAV** révolutionne la programmation en permettant d'écrire du code en **français** ET **anglais** naturels !
 
-- 🇫🇷 **French syntax**: Write code in natural French
-- 🇬🇧 **English syntax**: Write code in natural English  
-- 🧮 **Mathematical operations**: Support for basic to advanced math
-- 🔄 **Control structures**: If/else, loops, functions
-- 📝 **Natural language**: Code reads like human sentences
-- 🚀 **Easy to learn**: Perfect for beginners
+## ⚡ Installation Ultra-Rapide
 
-## Quick Start
-
-### Installation
-
+### Script Automatique (Recommandé)
 ```bash
-# Clone the repository
-git clone https://github.com/your-username/dav-language.git
-cd dav-language
+# Linux/macOS
+curl -sSL https://github.com/Asabi89/dav-language/releases/download/v1.0.0/install.sh | bash
 
-# Make executable
-chmod +x bin/dav
-
-# Add to PATH (optional)
-export PATH=$PATH:$(pwd)/bin
+# Windows (PowerShell)
+iwr -useb https://github.com/Asabi89/dav-language/releases/download/v1.0.0/install.ps1 | iex
 ```
 
-### Usage
+### Package Managers (Bientôt)
+```bash
+# PyPI
+pip install dav-language
+
+# Homebrew (macOS)  
+brew install dav
+
+# APT (Ubuntu/Debian)
+sudo apt install dav-language
+```
+
+## 🎯 Usage Simple
 
 ```bash
-# Run French programs
-dav hello.dav
+# Mode français
+dav mon_programme.dav
 
-# Run English programs  
-dav-en hello.dav
+# Mode anglais
+dav-en my_program.dav
 
-# Interactive mode
+# Mode interactif
 dav --interactive
 ```
 
-### Example Programs
+## 💡 Exemples de Code
 
-**French version** (`hello.dav`):
+### 🇫🇷 Version Française
 ```dav
-J'ai un nombre appelé x.
-Définir x à 5.
-Affiche x.
+J'ai un nombre appelé âge.
+Assigne âge à 25.
 
-Créer une fonction nommée doubler qui prend un nombre.
+Si l'âge est supérieur à 18 alors
+    Afficher "Vous êtes majeur !"
+Sinon
+    Afficher "Vous êtes mineur."
+
+Créer une fonction nommée calculer_double qui prend un nombre.
     Je vais retourner nombre fois 2.
 
-Affiche le résultat de doubler(x).
+Affiche le résultat de calculer_double(âge) à l'écran.
 ```
 
-**English version** (`hello.dav`):
-```dav  
-I have a number called x.
-Set x to 5.
-Show x on the screen.
+### 🇬🇧 Version Anglaise
+```dav
+I have a number called age.
+Set age to 25.
 
-Create a function named double that takes a number.
+If age is greater than 18 then
+    Display "You are an adult!"
+else
+    Display "You are a minor."
+
+Create a function named calculate_double that takes a number.
     I will return number times 2.
 
-Show the result of double(x) on the screen.
+Show the result of calculate_double(age) on the screen.
 ```
 
-## Language Syntax
+## 🌟 Fonctionnalités
 
-| French | English | Description |
-|--------|---------|-------------|
-| `J'ai un nombre appelé x` | `I have a number called x` | Variable declaration |
-| `Définir x à 5` | `Set x to 5` | Assignment |
-| `Montrer x à l'écran` | `Show x on the screen` | Print output |
+| 🇫🇷 Français | 🇬🇧 English | Description |
+|---------------|-------------|-------------|
+| `J'ai un nombre appelé x` | `I have a number called x` | Déclaration de variable |
+| `Assigne x à 5` | `Set x to 5` | Assignation |
+| `Affiche x` | `Show x` | Affichage |
 | `Si x est supérieur à 3` | `If x is greater than 3` | Conditions |
-| `Tant que x est inférieur à 10` | `While x is less than 10` | Loops |
+| `Tant que x est inférieur à 10` | `While x is less than 10` | Boucles |
+| `Créer une fonction nommée` | `Create a function named` | Fonctions |
 
+## 📁 Structure du Projet
 
+```
+dav-language/
+├── 🐍 dav_main.py           # Interpréteur français
+├── 🐍 dav_en_main.py        # Interpréteur anglais  
+├── 🏗️ build.py             # Script de build
+├── 📋 setup.py             # Configuration PyPI
+├── 📁 langage/             # Grammaires et syntaxe
+├── 📁 test/                # Tests unitaires
+├── 📁 assets/              # Ressources (logo, etc.)
+├── 📁 releases/            # Binaires compilés
+├── 📁 packaging/           # Packages (.deb, .pkg, etc.)
+├── 📁 installers/          # Installateurs
+├── 📁 website/             # Site web
+└── 📁 vscode-extension-dav/ # Extension VSCode
+```
 
-## Contributing
+## 🛠️ Développement
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests
-5. Submit a pull request
+### Build depuis les Sources
+```bash
+# Cloner le repository
+git clone https://github.com/Asabi89/dav-language.git
+cd dav-language
 
-## License
+# Build les binaires
+python build.py
 
-MIT License - see LICENSE file for details.
+# Tester
+python dav_main.py examples/test.dav
+python dav_en_main.py examples/test_en.dav
+```
+
+### Tests
+```bash
+# Lancer tous les tests
+python -m pytest test/
+
+# Tests spécifiques
+python test/test_parser.py
+python test/test_evaluator.py
+```
+
+## 🌍 Communauté
+
+- 📚 **[Documentation](https://github.com/Asabi89/dav-language/wiki)**
+- 🐛 **[Issues](https://github.com/Asabi89/dav-language/issues)**
+- 💬 **[Discussions](https://github.com/Asabi89/dav-language/discussions)**
+- 🎮 **[Playground Web](https://asabi89.github.io/dav-language)**
+
+## 🎯 Roadmap
+
+- [ ] 📦 Package managers (PyPI, Homebrew, etc.)
+- [ ] 🌐 Éditeur en ligne interactif
+- [ ] 🔧 Extension VSCode
+- [ ] 📚 Documentation interactive
+- [ ] 🏫 Support éducationnel
+
+## 🤝 Contribuer
+
+1. Fork le repository
+2. Créer une branche feature (`git checkout -b feature/nouvelle-fonctionnalite`)
+3. Commit les changements (`git commit -am 'Ajouter nouvelle fonctionnalité'`)
+4. Push vers la branche (`git push origin feature/nouvelle-fonctionnalite`)
+5. Créer une Pull Request
+
+## 📄 Licence
+
+MIT License - Voir [LICENSE](LICENSE) pour les détails.
+
+---
+
+**Créé avec ❤️ par [Asabi89](https://github.com/Asabi89) pour démocratiser la programmation**
